@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+    font-family: 'Inter', sans-serif;
+    color: #191919;
+    background: #EDEFF1;
+    background: red;
+}
+
+body {
+    height: 100vh;
+}
+
+#main-container {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media only screen and (min-width: 425px){
+    body{
+        padding: 2rem 0;
+    }
+
+    body #main-container {
+        border-radius: 2rem;
+    }
+}
+
+/* Custom styles */
+.tag {
+    @apply border border-primary-500/20 rounded-full h-8 px-4 flex items-center;
+}
+
+.custom-checkbox {
+    @apply block h-5 w-5 border border-primary-500 rounded-full p-0.5;
+}
+
+input[type=checkbox]:checked + .custom-checkbox::before {
+    content: '';
+    @apply h-full w-full bg-primary-500 block rounded-full;
+}

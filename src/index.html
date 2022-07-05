@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo | Test</title>
+    <link rel="stylesheet" href="../dist/css/styles.css">
+    <script src="https://kit.fontawesome.com/e1fd2686c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main-container" class="bg-white max-w-[425px] mx-auto relative">
+        <nav class="shadow-sm container flex gap-3 justify-between items-center  h-14 sticky top-0 bg-white">
+            <div class="text-white bg-primary-500 h-8 w-8 rounded-full grid place-items-center text-sm"><i class="fa-solid fa-gauge"></i></div>
+            <h5 class="font-semibold text-sm">Task Manager</h5>
+            <div><i class="fa-regular fa-bell"></i></div>
+        </nav>
+        
+        <main class="container mt-6">
+            <header class="flex items-center gap-3 justify-between">
+                <div>
+                    <h4 class="text-sm">Welcome Back!</h4>
+                    <h2 class="text-lg font-semibold">Here's Update Today</h2>
+                </div>
+                <button class="h-9 w-9 text-white bg-primary-500 grid place-items-center rounded-full">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </header>
+
+            <section class="mt-8">
+                <article class="bg-[#4BEED1] p-4 rounded-xl">
+                    <div class="flex items-center gap-3 justify-between">
+                        <div class="text-xs flex flex-wrap gap-3">
+                            <div class="tag">School</div>
+                            <div class="tag">Everyday</div>
+                        </div>
+                        <button class="text-xxs h-5 w-5 bg-primary-500 text-white rounded-md" >
+                            <i class="fa-solid fa-pen"></i>
+                        </button>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-lg truncate">Taking My Sister To School</h3>
+                    <div class="mt-6 flex gap-3 items-end justify-between">
+                        <div class="text-sm ">
+                            <p class="grid grid-cols-[1rem,1fr] gap-1.5 items-center mb-1"><i class="fa-regular fa-calendar-days"></i> 12 October 2021</p>
+                            <p class="grid grid-cols-[1rem,1fr] gap-1.5 items-center"><i class="fa-regular fa-clock"></i> 07:30 (Remind At 07:15)</p>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox1" hidden>
+                            <label for="checkbox1" class="custom-checkbox"></label>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
