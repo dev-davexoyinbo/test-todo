@@ -49,3 +49,32 @@ input[type=checkbox]:checked + .custom-checkbox::before {
     content: '';
     @apply h-full w-full bg-primary-500 block rounded-full;
 }
+
+.form-control-wrapper {
+    @apply border-b border-primary-500/20 pb-2;
+}
+
+.form-control-wrapper .form-control-label {
+    @apply text-sm font-medium mb-2 block;
+    color: #9F9F9F;
+}
+
+.form-control {
+    @apply flex items-center;
+}
+
+.form-control input {
+    flex: 1;
+}
+
+.checkbox-button {
+    @apply h-10 bg-white rounded-full border border-primary-500 px-4 flex items-center justify-center font-medium text-sm;
+}
+
+input[type=checkbox]:checked + .checkbox-button {
+    @apply bg-primary-500 text-white;
+}
+
+.color-selector input[type=radio]:checked + label {
+    @apply border border-primary-500;
+}
