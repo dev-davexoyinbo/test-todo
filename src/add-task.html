@@ -7,11 +7,12 @@
     <title>Todo | Test</title>
     <link rel="stylesheet" href="../dist/css/styles.css">
     <script src="https://kit.fontawesome.com/e1fd2686c2.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <div id="main-container" class="bg-white max-w-[425px] mx-auto relative">
         <nav class="shadow-sm container flex gap-3 justify-between items-center  h-14 sticky top-0 bg-white">
-            <span><i class="fa-solid fa-arrow-left"></i></span>
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
             <h5 class="font-semibold text-sm">Edit Task</h5>
             <div></div>
         </nav>
@@ -21,29 +22,9 @@
                 <div class="form-control-wrapper">
                     <label for="" class="form-control-label">Color Task</label>
                     <div class="flex gap-3 justify-between">
-                        <div class="flex gap-3 items-center">
-                            <div class="color-selector">
-                                <input type="radio" name="color-selector" id="red-color-selector" hidden>
-                                <label for="red-color-selector" class="h-5 w-5 rounded-full inline-block bg-red-400"></label>
-                            </div>
-                            <div class="color-selector">
-                                <input type="radio" name="color-selector" id="blue-color-selector" hidden>
-                                <label for="blue-color-selector" class="h-5 w-5 rounded-full inline-block bg-blue-400"></label>
-                            </div>
-                            <div class="color-selector">
-                                <input type="radio" name="color-selector" id="green-color-selector" hidden>
-                                <label for="green-color-selector" class="h-5 w-5 rounded-full inline-block bg-green-400"></label>
-                            </div>
-                            <div class="color-selector">
-                                <input type="radio" name="color-selector" id="yellow-color-selector" hidden>
-                                <label for="yellow-color-selector" class="h-5 w-5 rounded-full inline-block bg-yellow-400"></label>
-                            </div>
-                            <div class="color-selector">
-                                <input type="radio" name="color-selector" id="purple-color-selector" hidden>
-                                <label for="purple-color-selector" class="h-5 w-5 rounded-full inline-block bg-purple-400"></label>
-                            </div>
+                        <div data-color-selector-container class="flex flex-wrap gap-3 items-center">
                         </div>
-                        <button class="h-5 w-5 rounded-full grid place-items-center bg-[#F2F2F2] text-xxs"><i class="fa-solid fa-plus"></i></button>
+                        <button type="button" id="color-selector-add-button" class="h-5 w-5 rounded-full grid place-items-center bg-[#F2F2F2] text-xxs"><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
                 <div class="form-control-wrapper">
